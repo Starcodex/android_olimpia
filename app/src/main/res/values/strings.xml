@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Olimpia</string>
+
+    <string name="form">Personal data</string>
+    <string name="picture">Select a picture</string>
+    <string name="gps">Current location</string>
+    <string name="connection">Connection status</string>
+    <string name="save">Save info</string>
+    <string name="sending_user_info">Sending User info</string>
+
+</resources>

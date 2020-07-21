@@ -1,0 +1,6 @@
+include ':theme'
+include ':domain'
+include ':data'
+include ':commons'
+include ':app'
+rootProject.name = "Olimpia"

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.OA.Light" parent="Base.Theme.MaterialComponents.Light">
+
+        <!-- Window colors -->
+        <item name="android:disabledAlpha">0.25</item>
+        <item name="android:windowBackground">@color/oa_white</item>
+
+        <!-- Color palette -->
+        <item name="colorPrimary">@color/oa_blue_active</item>
+        <item name="colorPrimaryDark">@color/oa_blue_dark</item>
+        <item name="colorPrimaryLight">@color/oa_blue_light</item>
+        <item name="colorPrimaryLightB">@color/oa_blue_inactive</item>
+        <item name="colorSecondary">@color/oa_purple_active</item>
+        <item name="colorSecondaryDark">@color/oa_purple_dark</item>
+        <item name="colorSecondaryLight">@color/oa_purple_light</item>
+        <item name="colorSecondaryLightB">@color/oa_purple_inactive</item>
+        <item name="colorAccent">@color/oa_gray_dark</item>
+        <item name="colorControlNormal">@color/oa_blue_active</item>
+        <item name="colorButtonNormal">?android:attr/colorPrimary</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/oa_black</item>
+        <item name="android:textColorSecondary">@color/oa_gray_dark</item>
+        <item name="android:textColorTertiary">@color/oa_gray</item>
+        <item name="android:textColorHint">@color/oa_gray_light</item>
+        <item name="android:textColorLink">@color/oa_blue_active</item>
+        <item name="textColorButtonNormal">@android:color/white</item>
+
+        <!-- UI Decorations -->
+        <item name="colorListDivider">@color/oa_gray_light_b</item>
+        <!-- Text styles -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.OA.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.OA.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.OA.Headline3</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.OA.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.OA.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.OA.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.OA.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.OA.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.OA.Overline</item>
+        <item name="textAppearanceButton">@style/TextAppearance.OA.Button</item>
+        <item name="textAppearanceButtonMedium">@style/TextAppearance.OA.Button.Medium</item>
+        <item name="textAppearanceButtonCaption">@style/TextAppearance.OA.Button.Caption</item>
+
+        <!-- ActionBar attributes -->
+        <item name="actionBarTheme">@style/ThemeOverlay.OA.ActionBar</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.OA.ActionMenu</item>
+
+        <!-- Toolbar attributes -->
+        <item name="toolbarStyle">@style/Widget.OA.Toolbar</item>
+
+        <!-- Widget styles -->
+        <item name="materialButtonStyle">@style/Base.Widget.OA.Button</item>
+        <item name="materialButtonStyleSecondary">@style/Base.Widget.OA.Button.Secondary</item>
+        <item name="materialButtonMediumStyle">@style/Base.Widget.OA.Button.Medium</item>
+        <item name="borderlessButtonStyle">@style/Base.Widget.OA.Button.TextButton</item>
+        <item name="buttonStyleIcon">@style/Widget.OA.Button.TextButton.Icon</item>
+        <item name="switchStyle">@style/Base.Widget.OA.Switch</item>
+        <item name="editTextStyle">@style/Base.Widget.OA.TextInputEditText</item>
+        <item name="textInputStyle">@style/Base.Widget.OA.TextInputLayout</item>
+        <item name="android:progressBarStyleHorizontal">@style/Base.Widget.OA.ProgressBar.Horizontal</item>
+        <item name="tabStyle">@style/Base.Widget.OA.TabLayout</item>
+        <item name="dividerStyle">@style/Base.Widget.OA.Divider</item>
+        <item name="confirmationToastStyle">@style/Base.Widget.OA.Toast.Confirmation</item>
+
+        <!-- Dialog attributes -->
+        <item name="alertDialogTheme">@style/ThemeOverlay.OA.Dialog.Alert</item>
+        <item name="alertDialogStyle">@style/AlertDialog.OA</item>
+
+        <!-- List attributes -->
+        <item name="android:listDivider">@drawable/list_divider</item>
+
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+
+    <style name="Base.Theme.OA.Light.DarkActionBar">
+        <item name="actionBarTheme">@style/ThemeOverlay.OA.Dark.ActionBar</item>
+    </style>
+
+    <style name="ThemeOverlay.OA.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="ThemeOverlay.OA.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="ThemeOverlay.OA.Dialog.Alert" parent="@style/ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarButtonStyle">@style/Widget.OA.Button.TextButton.Dialog</item>
+        <item name="colorAccent">@color/oa_red_active</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/bg_choice_indicator_single</item>
+    </style>
+
+</resources>

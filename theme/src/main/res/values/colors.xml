@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="oa_black">#1B1B1B</color>
+    <color name="oa_gray_dark">#373737</color>
+    <color name="oa_gray">#595959</color>
+    <color name="oa_gray_light">#AAAAAA</color>
+    <color name="oa_gray_light_b">#EBEBEB</color>
+    <color name="oa_white">#FAFAFA</color>
+
+    <color name="oa_red_dark">#9E0000</color>
+    <color name="oa_red_active">#D81E06</color>
+    <color name="oa_red_inactive">#F9E4E4</color>
+
+    <color name="oa_blue_dark">#005cb2</color>
+    <color name="oa_blue_active">#1e88e5</color>
+    <color name="oa_blue_light">#6ab7ff</color>
+    <color name="oa_blue_inactive">#E4F0F9</color>
+
+    <color name="oa_purple_dark">#4a0072</color>
+    <color name="oa_purple_active">#9c27b0</color>
+    <color name="oa_purple_light">#d05ce3</color>
+    <color name="oa_purple_inactive">#f3e5f5</color>
+
+</resources>

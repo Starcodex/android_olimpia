@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        debug {
+
+            buildConfigField "String", "DOMAIN", DEBUG_BASE_API
+            buildConfigField "String", "USER", DEBUG_USER
+            buildConfigField "String", "PASS", DEBUG_PASSWORD
+            buildConfigField "String", "DB_NAME", DEBUG_DB_NAME
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField "String", "DOMAIN", RELEASE_BASE_API
+            buildConfigField "String", "USER", RELEASE_USER
+            buildConfigField "String", "PASS", RELEASE_PASSWORD
+            buildConfigField "String", "DB_NAME", RELEASE_DB_NAME
+
+        }
+    }
+}
+
+dependencies {
+
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Android X - Core
+    api "androidx.core:core-ktx:$androidXCoreVersion"
+
+    // Dagger 2
+    api "com.google.dagger:dagger:$daggerVersion"
+    api "com.google.dagger:dagger-android:$daggerVersion"
+    api "com.google.dagger:dagger-android-support:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
+
+    // RxJava
+    api "io.reactivex.rxjava2:rxandroid:$rXJava2Version"
+    api "io.reactivex.rxjava2:rxjava:$rXJava2Version"
+    api "io.reactivex.rxjava2:rxkotlin:$rXKotlinVersion"
+    api "io.reactivex.rxjava2:rxandroid:$rXJava2Version"
+
+
+}

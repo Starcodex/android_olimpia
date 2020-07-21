@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color Themes -->
+    <attr name="colorPrimaryLight" format="color" />
+    <attr name="colorPrimaryLightB" format="color" />
+    <attr name="colorSecondaryDark" format="color" />
+    <attr name="colorSecondaryLight" format="color" />
+    <attr name="colorSecondaryLightB" format="color" />
+    <!-- REFERENCES -->
+    <attr name="textColorButtonNormal" format="color" />
+    <attr name="buttonStyleIcon" format="reference" />
+    <attr name="dividerStyle" format="reference" />
+    <attr name="confirmationToastStyle" format="reference" />
+    <attr name="materialButtonStyleSecondary" format="reference" />
+    <attr name="materialButtonMediumStyle" format="reference" />
+    <attr name="textAppearanceButtonMedium" format="reference" />
+    <attr name="textAppearanceButtonCaption" format="reference" />
+
+    <declare-styleable name="RoundedCornerCardView">
+        <attr name="cardCornerRadius" />
+        <attr name="cardElevation" />
+    </declare-styleable>
+
+    <declare-styleable name="InformativeButton">
+        <attr name="icon" format="reference" />
+        <attr name="title" format="string" />
+        <attr name="description" format="string" />
+        <attr name="additionalInfoLayout" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DrawableCompatTextView">
+        <attr name="android:drawableStart" />
+        <attr name="android:drawableEnd" />
+        <attr name="android:drawableTop" />
+        <attr name="android:drawableBottom" />
+        <attr name="drawableStartTint" format="color" />
+        <attr name="drawableEndTint" format="color" />
+        <attr name="drawableTopTint" format="color" />
+        <attr name="drawableBottomTint" format="color" />
+    </declare-styleable>
+
+    <!-- UI Decoration -->
+    <attr name="colorListDivider" format="color" />
+
+</resources>
